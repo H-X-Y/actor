@@ -1,0 +1,65 @@
+OnRW fd:8
+weakup
+OnProcessMSG 
+OnMSG 
+OnRWMSG 
+OnProcessMSG 
+Hello
+start worker thread0
+start worker thread1
+start worker thread2
+SocketWorker Init
+[0]OnInit
+Worker()
+Worker()
+Worker()
+run lua init.lua
+[1]OnInit
+[lua] chat OnInit id:1
+AddEvent fd4
+OnAccept fd:4
+weakup
+OnProcessMSG 
+OnMSG 
+OnAcceptMsg 5
+[lua] chat OnAcceptMsg 5
+OnProcessMSG 
+OnAccept fd:4
+weakup
+OnProcessMSG 
+OnMSG 
+OnAcceptMsg 6
+[lua] chat OnAcceptMsg 6
+OnProcessMSG 
+OnRW fd:6
+weakup
+OnProcessMSG 
+OnMSG 
+OnRWMSG 
+[lua] chat OnSocketData 6
+OnProcessMSG 
+OnRW fd:5
+weakup
+OnProcessMSG 
+OnMSG 
+OnRWMSG 
+[lua] chat OnSocketData 5
+OnProcessMSG 
+OnRW fd:6
+weakup
+OnProcessMSG 
+OnMSG 
+OnRWMSG 
+OnSocketClose 6
+[lua] chat OnSocketClose 6
+RemoveEvent fd 6
+OnProcessMSG 
+OnRW fd:5
+weakup
+OnProcessMSG 
+OnMSG 
+OnRWMSG 
+OnSocketClose 5
+[lua] chat OnSocketClose 5
+RemoveEvent fd 5
+OnProcessMSG 
